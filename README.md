@@ -24,26 +24,11 @@ Modules (Noah)
 
     vendingAdder: 
 
-Highest Heirachy BDF (Sagan) 
-
-**Modules
-**
-
-Counter: 
-CanBuy: 
-CoinParser: 
-CoinDecoder: 
-x10: 
-x5: 
-x25: 
-delay: 
-vendingAdder: 
-
+Main Heirachy BDF (Sagan) 
 
 ModelSim (Andrew)
 
 - Write Do File
 - Setup model
-
 Paper  (Sagan + Andrew)
 - 
