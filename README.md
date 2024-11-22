@@ -4,7 +4,7 @@ More Diagrams (Andrew)
 - Draw them
   
 
-Modules
+Modules (Noah)
 
     Counter: 
 
@@ -24,6 +24,7 @@ Modules
 
     vendingAdder: 
 
+Highest Heirachy BDF (Sagan) 
 
 **Modules
 **
