@@ -14,13 +14,9 @@ Modules (Noah)
 
     CoinDecoder: 
 
-    x10: 
+    xN: 
 
-    x5: 
-
-    x25: 
-
-    delay: 
+    isdown: 
 
     vendingAdder: 
 
