@@ -8,6 +8,6 @@ module sum4 (input logic clk,
                 input logic [6:0] d,
                 output logic [6:0] sum);
     always_ff@(posedge clk,posedge reset)
-        if (reset)   tics<=7'b0;
+        if (reset)   sum<=7'b0;
         else sum<=a+b+c+d;
 endmodule
