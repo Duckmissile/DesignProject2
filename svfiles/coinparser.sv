@@ -2,9 +2,9 @@
 module coinparser(input logic clk,
                 input logic reset,
                 input logic [7:0] money,
-                ouptput logic [3:0] Q,
-                ouptput logic [3:0] D,
-                ouptput logic [3:0] N);
+                output logic [3:0] Q,
+                output logic [3:0] D,
+                output logic [3:0] N);
     always_ff@(posedge clk,posedge reset)
         if (reset)   Q<=4'b1010;
         else Q<=money/25;

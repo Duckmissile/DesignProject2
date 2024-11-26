@@ -7,5 +7,5 @@ module ticdown(input logic clk,
     logic refundprevprev;
     ff frp (clk,reset,1,refund, refundprev);
     ff frpp (clk,reset,1,refundprev, refundprevprev);
-    ff frpp (clk,reset,1,refundprevprev & ~refund, isdown);
+    ff frppp (clk,reset,1,refundprevprev & ~refund, isdown);
 endmodule
