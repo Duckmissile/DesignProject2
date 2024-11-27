@@ -19,13 +19,13 @@ force Quarters 1 @ 210, 0 @ 220
 force Buy 1 @ 300
 
 
-force Buys 00 @ 400
+force Buy 0 @ 400
 Nickles 1 @ 410, 0 @ 420
 Dimes 1 @ 430, 0 @ 440
 Refunds 1 @ 440, 0 @ 590
 
 
-force Buy 11 @ 600
+force Buy 1 @ 600
 
 
 force Clock 0 @ 0, 1 @ 1 -r 2
