@@ -2,30 +2,31 @@ vsim -gui work.vendingMachineProject
 add wave *
 
 force Reset 1 @ 0 , 0 @ 1
-force Nickle 0 @ 0
-force Dime 0 @ 0
-force Quarter 0 @ 0
+force Nickles 0 @ 0
+force Dimes 0 @ 0
+force Quarters 0 @ 0
 
 
-force buy  00 @ 0
-force Nickle 1 @ 10, 0 @ 20
-force Dime 1 @ 30, 0 @ 40
-force Dime 1 @ 50, 0 @ 60
+force Buy  0 @ 0
+force Nickles 1 @ 10, 0 @ 20
+force Dimes 1 @ 30, 0 @ 40
+force Dimes 1 @ 50, 0 @ 60
+force Buy 1 @ 100, 0 @ 110
 
 
-
-force buy 00 @ 200;
-force Quarter 1 @ 210, 0 @ 220
-
-
-force buy 00 @ 400;
-Nickle 1 @ 410, 0 @ 420
-Dime 1 @ 430, 0 @ 440
-Refund 1 @ 440, 0 @ 590
+force Buy 0 @ 200
+force Quarters 1 @ 210, 0 @ 220
+force Buy 1 @ 300
 
 
-force buy 11 @ 600;
+force Buys 00 @ 400
+Nickles 1 @ 410, 0 @ 420
+Dimes 1 @ 430, 0 @ 440
+Refunds 1 @ 440, 0 @ 590
 
- 
+
+force Buy 11 @ 600
+
+
 force Clock 0 @ 0, 1 @ 1 -r 2
 run 600
