@@ -24,7 +24,7 @@ module main(input logic [3:0] Buy,
     //adds together credit and debt
     sum4 sum (Clock,Reset,Q,D,N,C,Money);
     //checks whether or not to reset money and display after refunding
-    //ticdown td (Clock,Reset,Refund,ParserReset);
+    ticdown td (Clock,Reset,Refund,ParserReset);
     //outputs what coins are refunded
     coinparser cp (Clock,Refund | Reset,ParserReset | Reset ,Money,Qnum,Dnum,Nnum,numprev);
     // outputs the credit in decimal
