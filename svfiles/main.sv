@@ -16,11 +16,11 @@ module main(input logic [3:0] Buy,
     logic [6:0] Q,D,N,C,Money,numprev;
     logic [3:0] Qnum,Dnum,Nnum,Snum0,Snum1;
     // increments coins when inputted
-    fastcounter #(.cost(25)) fsq (Quarters, Reset,Q);
-    fastcounter #(.cost(10)) fsd (Dimes,Reset,D);
-    fastcounter #(.cost(5)) fsn (Nickles,Reset,N);
+    fastcounter #(.cost(25)) fsq (Quarters, ParserReset | Reset,Q);
+    fastcounter #(.cost(10)) fsd (Dimes,ParserReset | Reset,D);
+    fastcounter #(.cost(5)) fsn (Nickles,ParserReset | Reset,N);
     //deals with if items are being bought
-    buy b (ParserReset | Reset,Money,Buy,C,Vending);
+    buy b (Clock,ParserReset | Reset,Money,Buy,C,Vending);
     //adds together credit and debt
     sum4 sum (Clock,Reset,Q,D,N,C,Money);
     //checks whether or not to reset money and display after refunding
